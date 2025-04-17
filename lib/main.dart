@@ -14,7 +14,7 @@ class MyGame extends FlameGame {
     final rnd = Random();
     final image = await images.load('bunny.png');
 
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 10_000; i++) {
       final sprite = SpriteComponent(
         sprite: Sprite(image),
         position: Vector2(rnd.nextDouble() * size.x, rnd.nextDouble() * size.y),
